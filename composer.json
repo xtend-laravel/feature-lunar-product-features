@@ -1,0 +1,26 @@
+{
+    "name": "xtend-laravel/feature-lunar-product-features",
+    "description": "Cart management for Lunar",
+    "type": "xtend-feature",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "XtendLunar\\Features\\ProductFeatures\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Lee",
+            "email": "adam@codelabx.ltd"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "XtendLunar\\Features\\ProductFeatures\\ProductFeaturesProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
