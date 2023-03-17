@@ -16,7 +16,10 @@ class ProductFeaturesProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/hub.php');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'adminhub');
+    }
 
+    public function boot(): void
+    {
         Livewire::component('hub.pages.product-features.index', FeaturesIndex::class);
         Livewire::component('hub.components.product-features.edit', ProductFeatureEdit::class);
         Livewire::component('hub.components.product-features.value-edit', ProductFeatureValueEdit::class);
