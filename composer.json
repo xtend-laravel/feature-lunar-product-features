@@ -1,6 +1,6 @@
 {
     "name": "xtend-laravel/feature-lunar-product-features",
-    "description": "Cart management for Lunar",
+    "description": "Lunar Product Features",
     "type": "xtend-feature",
     "license": "MIT",
     "autoload": {
@@ -14,13 +14,6 @@
             "email": "adam@codelabx.ltd"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "XtendLunar\\Features\\ProductFeatures\\ProductFeaturesProvider"
-            ]
-        }
-    },
     "minimum-stability": "dev",
     "require": {}
 }
