@@ -27,9 +27,9 @@ class ProductFeaturesProvider extends XtendFeatureProvider
         Livewire::component('hub.pages.product-features.index', FeaturesIndex::class);
         Livewire::component('hub.components.product-features.edit', ProductFeatureEdit::class);
         Livewire::component('hub.components.product-features.value-edit', ProductFeatureValueEdit::class);
-        // Livewire::component('hub.components.products.slots.product-feature-slot', ProductFeatureSlot::class);
+        Livewire::component('hub.components.products.slots.product-feature-slot', ProductFeatureSlot::class);
 
-        //Slot::register('product.show', ProductFeatureSlot::class);
+        Slot::register('product.show', ProductFeatureSlot::class);
 
         // @todo Move this to XtendFeatureProvider to check if method exists
         $this->registerWithSidebarMenu();
