@@ -32,6 +32,7 @@ class ProductFeaturesProvider extends XtendFeatureProvider
         Slot::register('product.show', ProductFeatureSlot::class);
 
         // @todo Move this to XtendFeatureProvider to check if method exists
+
         $this->registerWithSidebarMenu();
     }
 
@@ -39,7 +40,7 @@ class ProductFeaturesProvider extends XtendFeatureProvider
     {
         // Note: We listen to LocaleUpdated event to make sure translations are loaded and menu items are all available
         Event::listen(LocaleUpdated::class, function () {
-            Menu::slot('sidebar')->section('catalogue-manager')->addItem(function ($item) {
+            Menu::slot('sidebar')->group('hub.configure')->addItem(function ($item) {
                 $item->name('Product Features')
                      ->handle('hub.product-features')
                      ->route('hub.product-features.index')
